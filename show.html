@@ -1,0 +1,21 @@
+<table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>RollNumber</th>
+                    <th>NIC</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in info">
+                  <td>{{ x.name }}</td>
+                  <td>{{ x.rollNum }}</td>
+                  <td>{{ x.nic }}</td>
+                  <td>
+                      <a href="" ng-click="del(x.name)">Delete</a> | 
+                      <a href="" ng-click="edit(x.name)">Edit</a>
+                  </td>
+                </tr>
+    </tbody>
+</table>
